@@ -1,0 +1,874 @@
+<html lang="en" style="scroll-behavior: smooth;"><head><script src="https://mc.yandex.ru/metrika/tag_phono.js" type="text/javascript" charset="utf-8" async=""></script>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+            <meta name="description" content="GitFlic - первый российский сервис для хранения исходного кода и работы с ним. Основан на системе контроля версий Git. Регистрируйтесь. Бесплатное хранение кода и  репозиториев.">
+            <meta name="_csrf" content="21ee2dbc-0df5-4ed3-a131-c1ce07ba24c5">
+            <meta name="_csrf_header" content="X-CSRF-TOKEN">
+            <title>Облачный сервис хранения репозиториев исходного кода GitFlic</title>
+
+            <meta name="keywords" content=" аналог гитхаба, аналоги github, gitlab аналоги, бесплатные репозитории, хранение кода, хранение двоичного кода, хранение данных в коде, системы хранения кода, облачный хранилище, облачное хранилище кода" <meta="" property="og:type">
+            <meta property="og:title" content="Облачный сервис хранения репозиториев исходного кода GitFlic">
+            <meta property="og:description" content="GitFlic - первый российский сервис для хранения исходного кода и работы с ним. Основан на системе контроля версий Git. Регистрируйтесь. Бесплатное хранение кода и  репозиториев.">
+            <meta property="og:image" content="https://gitflic.ru/static/images/ogimage.png">
+            <meta property="og:image:alt" content="GitFlic - первый российский сервис для хранения исходного кода и работы с ним. Основан на системе контроля версий Git. Регистрируйтесь. Бесплатное хранение кода и  репозиториев.">
+            <meta property="og:url" content="https://gitflic.ru">
+
+
+            <meta name="theme-color" content="black">
+            <link type="image/x-icon" rel="icon" href="/favicon.ico"> 
+            <link rel="apple-touch-icon" sizes="72x72" href="/static/image/favicon/icon@72.png">
+            <link rel="apple-touch-icon" sizes="144x144" href="/static/image/favicon/icon@144.png">
+            <link rel="icon" type="image/png" sizes="192x192" href="/static/image/favicon/icon@192.png">
+            <link rel="icon" type="image/png" sizes="96x96" href="/static/image/favicon/icon@96.png">
+            <link rel="manifest" href="/static/image/favicon/manifest.json">
+            <meta name="msapplication-TileColor" content="#ffffff">
+            <meta name="msapplication-TileImage" content="/static/image/favicon/icon@144.png">
+            <base href="/">
+            <link rel="stylesheet" href="/static/css/app.min.css?v=4.13.0&amp;t=1785854954">
+            <link rel="manifest" href="/static/image/favicon/manifest.json">
+        <style>.SmartCaptcha-Overlay{z-index:9999999;width:100%;width:var(--smart-captcha-doc-width,100%);height:100%;height:var(--smart-captcha-doc-height,100%);background:#0006;margin:0;padding:0;position:fixed;top:-10000px;left:-10000px}.SmartCaptcha-Overlay.SmartCaptcha-Overlay_visible{position:fixed;top:0;left:0}.SmartCaptcha-Overlay.SmartCaptcha-Overlay_no_background{background:0 0}.SmartCaptcha-Overlay .SmartCaptcha-Spin{margin:auto;position:absolute;top:50%;left:0;right:0;transform:translateY(-50%)}</style><style>.SmartCaptcha-Spin{visibility:hidden;box-sizing:border-box;background-image:linear-gradient(90deg,#0000,#0000);border:2px solid #0000;border-radius:50%;display:none}.SmartCaptcha-Spin:after{visibility:hidden;content:" "}.SmartCaptcha-Overlay_visible.SmartCaptcha-Overlay_show_spinner .SmartCaptcha-Spin{visibility:visible;backface-visibility:hidden;border-top-color:#5282ff;border-left-color:#5282ff;border-top-color:var(--spin-view-default-border-color,#5282ff);border-left-color:var(--spin-view-default-border-color,#5282ff);width:50px;height:50px;animation:1s linear .21s infinite islands-spin;display:inline-block}@keyframes islands-spin{0%{transform:rotate(0)}to{transform:rotate(360deg)}}</style><style>.smart-captcha{min-width:300px;height:118px}.smart-captcha_invisible{height:0}</style><link rel="prefetch" as="script" href="https://smartcaptcha.yandexcloud.net/shield.0caf885623c34d7b.js"></head>
+        <body class="" style="--theme-color-accent: var(--colors-palette-quaternary);">
+    <div class="cookies show">
+      <div class="cookies-alert">
+        <div class="cookies-alert-layout">
+          <p class="cookies-text m-0">
+            Я соглашаюсь с использованием файлов cookie владельцем сайта в соответствии с <a href="https://gitflic.ru/docs/cookie-policy">Политикой обработки файлов сookie gitflic.ru</a> и <a href="https://gitflic.ru/docs/policy">Положением по обработке и защите персональных данных gitflic.ru</a>, в том числе на передачу данных из файлов cookie сторонним статистическим и рекламным службам, указанным в <a href="https://gitflic.ru/docs/cookie-policy">Политике обработки файлов сookie gitflic.ru</a>.
+          </p>
+           <button type="button" class="cookies-text cookiesBtn btn">
+            Принять
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <header class="header" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="/" class="header__logo">
+                    <img src="/static/images/logo.svg" class="header__logo-white" alt="Gitflic logo" loading="lazy">
+                    <img src="/static/images/logo-black.svg" class="header__logo-black" alt="Gitflic logo" loading="lazy">
+                </a>
+                <div class="header__menu">
+                    <div class="header__menu-item">
+                        <span>Решения</span>
+                        <div class="header__menu-submenu">
+                            <a href="/download/cloud">SaaS</a>
+                            <a href="/download/onpremise">Self-hosted</a>
+                        </div>
+                    </div>
+                    <div class="header__menu-item">
+                        <a href="/docs/policy">Документы</a>
+                    </div>
+                    <div class="header__menu-item">
+                        <a href="/price">Тарифы</a>
+                    </div>
+                    <div class="header__menu-item">
+                        <a href="/job">Вакансии</a>
+                    </div>
+                    <!-- <div class="header__menu-item">
+                        <a href="#">Скачать</a>
+                    </div> -->
+                    <div class="header__menu-item">
+                        <a href="/contact">Контакты</a>
+                    </div>
+                </div>
+                        <div class="header__account --user-login-in">
+                            <a href="/user/airsworld">
+                                <img class="rounded-circle" height="25px" width="25px" src="/upload/-/user/22e1a415-e7a2-4202-a106-525e2d2a0a01/avatar/d42e2b9f-4a81-420e-8e52-5349cddfdf59.png">
+                                <p class="header-username"> @airsworld</p>
+                            </a>
+                            <form class="navbar-locale --has-user-info js-navbar-locale-change">
+                              <input type="hidden" name="_csrf" value="21ee2dbc-0df5-4ed3-a131-c1ce07ba24c5">
+                              <div class="header__locale">
+                                <div class="navbar-locale__wrapper">
+                                  <button class="navbar-locale__button --ru --active" type="submit" name="lang" value="ru" title="RU"></button>
+                                  <button class="navbar-locale__button --en " type="submit" name="lang" value="en" title="ENG"></button>
+                                </div>
+                              </div>
+                            </form>  
+                            <form method="POST" action="/auth/logout" class="d-flex justify-content-center justify-content-lg-start pr-0">
+                                <input type="hidden" name="_csrf" value="21ee2dbc-0df5-4ed3-a131-c1ce07ba24c5">
+                                <button type="submit" class="button button--tertiary">
+Выйти                                </button>
+                            </form>
+                        </div>
+                <div class="header__burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main data-barba="container" data-barba-namespace="home">
+      <section class="hero">
+        <div class="hero__blob" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);"></div>
+        <div class="container" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+          <p>Первая Российская</p>
+          <h1>
+Платформа для<br>работы <span>с кодом <span class="flicker-animation">_</span></span>          </h1>
+          <a href="/auth/login" class="button button--tertiary button-start">Начать работу</a>
+          <a href="/public/project" class="button button--tertiary" target="_blank">Смотреть все проекты</a>
+          <button class="button modal__open button--primary button-demo">Запросить демо</button>
+        </div>
+        <!-- <div id="hero__canvas" class="hero__canvas"></div> -->
+        <div class="hero__images">
+          <video width="100%" height="auto" poster="static/images/webp/capabilities/create.webp" autoplay="" muted="" loop="" playsinline="" style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate(0px, 0px);">
+            <source src="static/videos/create.mp4" type="video/mp4;">
+          </video>
+          <picture style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, -300px);">
+            <source srcset="static/images/webp/capabilities/create2.webp" type="image/webp">
+            <img src="static/images/capabilities/create2.png" alt="gitflic-create-bg">
+          </picture>
+          <picture style="translate: none; rotate: none; scale: none; opacity: 1; transform: translate3d(0px, 0px, -600px);">
+            <source srcset="static/images/webp/capabilities/create3.webp" type="image/webp">
+            <img src="static/images/capabilities/create3.png" alt="gitflic-create-bg-2">
+          </picture>
+        </div>
+        <div class="capabilities__waves"></div>
+      </section>
+      <section class="capabilities">
+        <div class="container">
+          <h2 style="translate: none; rotate: none; scale: none; transform: translate(0px, 140px);">Возможности платформы</h2>
+          <div class="capabilities__subtitle" style="translate: none; rotate: none; scale: none; transform: translate(0px, 240px);">Решение для хранения исходного кода и работы с ним. Объединяйтесь в команды или работайте в одиночку</div>
+          <div class="capabilities__wrapper">
+            <div class="capabilities__item">
+              <div class="capabilities__item-blob" style="translate: none; rotate: none; scale: none; opacity: 0; transform: scale(0.9, 0.9);"></div>
+              <div class="capabilities__item-text" style="translate: none; rotate: none; scale: none; opacity: 0.1; transform: scale(0.95, 0.95);">
+                <picture>
+                  <source srcset="static/images/webp/capabilities/icon-1.webp" type="image/webp">
+                  <img src="static/images/capabilities/icon-1.png" alt="gitflic-icon">
+                </picture>
+                <h3>Создание</h3>
+                <p>Используйте все возможности Git-инструмента. Создавайте, смотрите и управляйте проектами с помощью системы контроля версий.</p>
+                <p>Объединяйтесь в команды и компании, масштабируйте их и управляйте проектами на всех этапах процесса разработки.</p>
+              </div>
+              <div class="capabilities__item-images">
+                <picture>
+                  <source srcset="static/images/webp/capabilities/create.webp" type="image/webp">
+                  <img src="static/images/capabilities/create.png" alt="gitflic-create" style="translate: none; rotate: none; scale: none; opacity: 0; transform: translate(40px, 0px);">
+                </picture>
+                <picture>
+                  <source srcset="static/images/webp/capabilities/vs-code.webp" type="image/webp">
+                  <img src="static/images/capabilities/vs-code.png" alt="gitflic-code" style="translate: none; rotate: none; scale: none; opacity: 0; transform: translate(40px, 0px);">
+                </picture>
+              </div>
+            </div>
+            <div class="capabilities__item">
+              <div class="capabilities__item-blob" style="translate: none; rotate: none; scale: none; opacity: 0; transform: scale(0.9, 0.9);"></div>
+              <div class="capabilities__item-text" style="translate: none; rotate: none; scale: none; opacity: 0.1; transform: scale(0.95, 0.95);">
+                <picture>
+                  <source srcset="static/images/webp/capabilities/icon-2.webp" type="image/webp">
+                  <img src="static/images/capabilities/icon-2.png" alt="gitflic-icon">
+                </picture>
+                <h3>Тестирование</h3>
+                <p>Проводите автоматическое тестирование исходного кода.</p>
+                <p>Настраивайте и запускайте необходимые кастомизированные тесты, условия или вспомогательные действия с помощью технологии непрерывной интеграции (Continious Integration).</p>
+              </div>
+              <div class="capabilities__item-images">
+                <picture>
+                  <source srcset="static/images/webp/capabilities/testing.webp" type="image/webp">
+                  <img src="static/images/capabilities/testing.png" alt="gitflic-testing" style="translate: none; rotate: none; scale: none; opacity: 0; transform: translate(40px, 0px);">
+                </picture>
+              </div>
+            </div>
+            <div class="capabilities__item">
+              <div class="capabilities__item-blob" style="translate: none; rotate: none; scale: none; opacity: 0; transform: scale(0.9, 0.9);"></div>
+              <div class="capabilities__item-text" style="translate: none; rotate: none; scale: none; opacity: 0.1; transform: scale(0.95, 0.95);">
+                <picture>
+                  <source srcset="static/images/webp/sast/sast-icon.webp" type="image/webp">
+                  <img src="static/images/sast/sast-icon.png" alt="sast-icon">
+                </picture>
+                <h3 class="show-badge" data-badge="Новинка">Безопасность</h3>
+                <h5>Анализ кода.</h5>
+                <p>Улучшаете качество кода, применяйте статический анализатор для поиска ошибок и выявления проблем безопасности на ранних этапах разработки.</p>
+                <div class="capabilities__item-accent-card">
+                  <div><b>SAST</b></div>
+                  <div><b>DAST</b></div>
+                  <div><b>SCA</b></div>
+                </div>
+              </div>
+              <div class="capabilities__item-images">
+                <picture>
+                  <source srcset="static/images/webp/sast/sast-1.webp" type="image/webp">
+                  <img src="static/images/sast/sast-1.png" alt="gitflic-screen-merge-reqest" style="translate: none; rotate: none; scale: none; opacity: 0; transform: translate(40px, 0px);">
+                </picture>
+              </div>
+            </div>
+            <div class="capabilities__item">
+              <div class="capabilities__item-blob" style="translate: none; rotate: none; scale: none; opacity: 0; transform: scale(0.9, 0.9);"></div>
+              <div class="capabilities__item-text" style="translate: none; rotate: none; scale: none; opacity: 0.1; transform: scale(0.95, 0.95);">
+                <picture>
+                  <source srcset="static/images/webp/capabilities/icon-4.webp" type="image/webp">
+                  <img src="static/images/capabilities/icon-4.png" alt="gitflic-icon">
+                </picture>
+                <h3>Выпуск</h3>
+                <p>Автоматизируйте процесс сборки исходного кода.</p>
+                <p>Проводите автоматическую сборку и подготовку релизов для дальнейшего развертывания и интеграций с помощью технологии непрерывной доставки (Continious delivery).</p>
+                <p>Быстрая и безопасная система доставки артефактов на сервер для оптимизации процессов разработки и развертывания ПО.</p>
+              </div>
+              <div class="capabilities__item-images">
+                <picture>
+                  <source srcset="static/images/webp/capabilities/merge-reqest.webp" type="image/webp">
+                  <img src="static/images/capabilities/merge-reqest.png" alt="gitflic-screen-merge-reqest" style="translate: none; rotate: none; scale: none; opacity: 0; transform: translate(40px, 0px);">
+                </picture>
+                <picture>
+                  <source srcset="static/images/webp/capabilities/job.webp" type="image/webp">
+                  <img src="static/images/capabilities/job.png" alt="gitflic-screen-merge-reqest" style="translate: none; rotate: none; scale: none; opacity: 0; transform: translate(40px, 0px);">
+                </picture>
+              </div>
+            </div>
+            <div class="capabilities__item">
+              <div class="capabilities__item-blob" style="translate: none; rotate: none; scale: none; opacity: 0; transform: scale(0.9, 0.9);"></div>
+              <div class="capabilities__item-text" style="translate: none; rotate: none; scale: none; opacity: 0.1; transform: scale(0.95, 0.95);">
+                <picture>
+                  <source srcset="static/images/webp/capabilities/icon-5.webp" type="image/webp">
+                  <img src="static/images/capabilities/icon-5.png" alt="gitflic-icon">
+                </picture>
+                <h3>Контроль</h3>
+                <p>Контролируйте процесс на всех этапах разработки для улучшения ключевых показателей. Собирайте статистику, снижайте риски и проводите анализ пользовательского опыта.</p>
+                <p>Собирайте обратную связь при помощи инструмента “Проблемы”, чтобы улучшить свои продукты.</p>
+              </div>
+              <div class="capabilities__item-images">
+                <picture>
+                  <source srcset="static/images/webp/capabilities/create-task.webp" type="image/webp">
+                  <img src="static/images/capabilities/create-task.png" alt="gitflic-screen-tasks" style="translate: none; rotate: none; scale: none; opacity: 0; transform: translate(40px, 0px);">
+                </picture>
+              </div>
+            </div>
+            <div class="capabilities__item">
+              <div class="capabilities__item-blob" style="translate: none; rotate: none; scale: none; opacity: 0; transform: scale(0.9, 0.9);"></div>
+              <div class="capabilities__item-text" style="translate: none; rotate: none; scale: none; opacity: 0.1; transform: scale(0.95, 0.95);">
+                <picture>
+                  <source srcset="static/images/webp/registry/registry-icon.webp" type="image/webp">
+                  <img src="static/images/registry/registry-icon.png" alt="gitflic-icon">
+                </picture>
+                <h3 class="show-badge" data-badge="Новинка">Реестр пакетов</h3>
+                <p>Cовместное использование пакетов ПО в качестве зависимостей в других проектах.</p>
+                <p>Cоздавайте как личные, так и общедоступные реестры для различных менеджеров пакетов.</p>
+                <div class="capabilities__item-accent-card">
+                  <div>Docker</div>
+                  <div>Maven</div>
+                  <div>NPM</div>
+                  <div>PyPi</div>
+                  <div>Generic</div>
+                  <div>NuGet</div>
+                  <div>Composer</div>
+                  <div>OneScript</div>
+                  <div>CRAN</div>
+                  <div>Deb</div>
+                  <div>RPM</div>
+                  <div>Go</div>
+                  <div>Julia</div>
+                </div>
+              </div>
+              <div class="capabilities__item-images">
+                <picture>
+                  <source srcset="static/images/webp/registry/registry-1.webp" type="image/webp">
+                  <img src="static/images/registry/registry-1.png" alt="gitflic-registry" style="translate: none; rotate: none; scale: none; opacity: 0; transform: translate(40px, 0px);">
+                </picture>
+                <picture>
+                  <source srcset="static/images/webp/registry/registry-2.webp" type="image/webp">
+                  <img src="static/images/registry/registry-2.png" alt="gitflic-registry" style="translate: none; rotate: none; scale: none; opacity: 0; transform: translate(40px, 0px);">
+                </picture>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="capabilities__waves"></div>
+      </section>
+      <section class="our-solutions">
+        <div class="capabilities__waves"></div>
+        <div class="container">
+          <h2 style="translate: none; rotate: none; scale: none; transform: translate(0px, 140px);">Наши решения</h2>
+          <div class="our-solutions__subtitle" style="translate: none; rotate: none; scale: none; transform: translate(0px, 240px);">Храните ваш код в нашем облачном сервисе или разверните систему на собственном сервере</div>
+          <div class="our-solutions__wrapper">
+            <div class="our-solutions__item" style="translate: none; rotate: none; scale: none; transform: translate(0px, 220px);">
+              <div class="our-solutions__item-title">SaaS</div>
+              <div class="our-solutions__item-desc">
+                <p>Решение для облачного хранения исходного кода и работы с ним.</p>
+                <p>Объединяйтесь в команды или работайте в одиночку в приватных или открытых репозиториях.</p>
+              </div>
+              <div class="our-solutions__item-buttons">
+                <a href="/auth/login" class="button button--secondary">Начать работу</a>
+                <a href="/download/cloud" class="button button--tertiary">Подробнее</a>
+              </div>
+            </div>
+            <div class="our-solutions__item" style="translate: none; rotate: none; scale: none; transform: translate(0px, 220px);">
+              <div class="our-solutions__item-title">Self-hosted</div>
+              <div class="our-solutions__item-desc">
+                <p>Решение для установки GitFlic на собственный сервер.</p>
+                <p>Используйте все инструменты сервиса локально, обеспечив полный контроль и безопасность вашего контура.</p>
+              </div>
+              <div class="our-solutions__item-buttons">
+                <a href="mailto:sales@gitflic.ru?subject=Запрос решения для установки на собственный сервер" class="button button--secondary">Запросить</a>
+                <a href="/download/onpremise" class="button button--tertiary">Подробнее</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cta">
+        <div class="cta__bg" style="translate: none; rotate: none; scale: none; transform: scale(0.85, 0.85);"></div>
+        <div class="container">
+          <div class="cta__wrapper">
+            <div class="cta__text">
+              <h3>Перенеси все свои проекты<br>из GitLab в GitFlic с помощью инструмента для миграций</h3>
+              <a href="mailto:sales@gitflic.ru?subject=Запрос на миграцию из GitLab" class="button button--secondary">Перенести проекты</a>
+            </div>
+            <div class="cta__image">
+              <picture>
+                <source srcset="static/images/webp/cta/figure.webp" type="image/webp">
+                <img src="static/images/cta/figure.png" alt="gradient figure">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="our-clients">
+        <div class="container">
+          <h2 style="translate: none; rotate: none; scale: none; transform: translate(0px, 140px);">Наши клиенты</h2>
+          <div class="our-clients__subtitle" style="translate: none; rotate: none; scale: none; transform: translate(0px, 240px);">Нашей платформе доверяют следующие компании:</div>
+          <div class="our-clients__slider" style="translate: none; rotate: none; scale: none; transform: translate(0px, 200px);">
+            <div class="swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-watch-progress">
+              <div class="swiper-wrapper" style="transform: translate3d(-1308px, 0px, 0px); transition-duration: 0ms;" id="swiper-wrapper-94d3450a234dc610c" aria-live="off"><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="4" style="width: 307px; margin-right: 20px;" role="group" aria-label="5 / 8">
+                  <div class="our-clients__slider-item">
+                    <picture>
+                      <source srcset="static/images/webp/clients/igroprom.webp" type="image/webp">
+                      <img src="static/images/clients/igroprom.png" alt="partner-igroprom">
+                    </picture>
+                  </div>
+                </div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="5" style="width: 307px; margin-right: 20px;" role="group" aria-label="6 / 8">
+                  <div class="our-clients__slider-item">
+                    <picture>
+                      <source srcset="static/images/webp/clients/ai-da.webp" type="image/webp">
+                      <img src="static/images/clients/ai-da.png" alt="partner-visuals">
+                    </picture>
+                  </div>
+                </div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="6" style="width: 307px; margin-right: 20px;" role="group" aria-label="7 / 8">
+                  <div class="our-clients__slider-item">
+                    <picture>
+                      <source srcset="static/images/webp/clients/apitree.webp" type="image/webp">
+                      <img src="static/images/clients/apitree.png" alt="partner-visuals">
+                    </picture>
+                  </div>
+                </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="7" style="width: 307px; margin-right: 20px;" role="group" aria-label="8 / 8">
+                  <div class="our-clients__slider-item">
+                    <picture>
+                      <source srcset="static/images/webp/clients/orientir.webp" type="image/webp">
+                      <img src="static/images/clients/orientir.png" alt="partner-visuals">
+                    </picture>
+                  </div>
+                </div>
+                <!-- Slides -->
+                <div class="swiper-slide swiper-slide-visible swiper-slide-active" data-swiper-slide-index="0" style="width: 307px; margin-right: 20px;" role="group" aria-label="1 / 8">
+                  <div class="our-clients__slider-item">
+                    <picture>
+                      <source srcset="static/images/webp/clients/ti-wo.webp" type="image/webp">
+                      <img src="static/images/clients/ti-wo.png" alt="partner-igroprom">
+                    </picture>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-visible swiper-slide-next" data-swiper-slide-index="1" style="width: 307px; margin-right: 20px;" role="group" aria-label="2 / 8">
+                  <div class="our-clients__slider-item">
+                    <picture>
+                      <source srcset="static/images/webp/clients/dreamuch.webp" type="image/webp">
+                      <img src="static/images/clients/dreamuch.png" alt="partner-dreamuch">
+                    </picture>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-visible" data-swiper-slide-index="2" style="width: 307px; margin-right: 20px;" role="group" aria-label="3 / 8">
+                  <div class="our-clients__slider-item">
+                    <picture>
+                      <source srcset="static/images/webp/clients/se.webp" type="image/webp">
+                      <img src="static/images/clients/se.png" alt="system-electric">
+                    </picture>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-visible" data-swiper-slide-index="3" style="width: 307px; margin-right: 20px;" role="group" aria-label="4 / 8">
+                  <div class="our-clients__slider-item">
+                    <picture>
+                      <source srcset="static/images/webp/clients/visuals.webp" type="image/webp">
+                      <img src="static/images/clients/visuals.png" alt="partner-visuals">
+                    </picture>
+                  </div>
+                </div>
+                <div class="swiper-slide" data-swiper-slide-index="4" style="width: 307px; margin-right: 20px;" role="group" aria-label="5 / 8">
+                  <div class="our-clients__slider-item">
+                    <picture>
+                      <source srcset="static/images/webp/clients/igroprom.webp" type="image/webp">
+                      <img src="static/images/clients/igroprom.png" alt="partner-igroprom">
+                    </picture>
+                  </div>
+                </div>
+                <div class="swiper-slide" data-swiper-slide-index="5" style="width: 307px; margin-right: 20px;" role="group" aria-label="6 / 8">
+                  <div class="our-clients__slider-item">
+                    <picture>
+                      <source srcset="static/images/webp/clients/ai-da.webp" type="image/webp">
+                      <img src="static/images/clients/ai-da.png" alt="partner-visuals">
+                    </picture>
+                  </div>
+                </div>
+                <div class="swiper-slide" data-swiper-slide-index="6" style="width: 307px; margin-right: 20px;" role="group" aria-label="7 / 8">
+                  <div class="our-clients__slider-item">
+                    <picture>
+                      <source srcset="static/images/webp/clients/apitree.webp" type="image/webp">
+                      <img src="static/images/clients/apitree.png" alt="partner-visuals">
+                    </picture>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide-duplicate-prev" data-swiper-slide-index="7" style="width: 307px; margin-right: 20px;" role="group" aria-label="8 / 8">
+                  <div class="our-clients__slider-item">
+                    <picture>
+                      <source srcset="static/images/webp/clients/orientir.webp" type="image/webp">
+                      <img src="static/images/clients/orientir.png" alt="partner-visuals">
+                    </picture>
+                  </div>
+                </div>
+              <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active" data-swiper-slide-index="0" style="width: 307px; margin-right: 20px;" role="group" aria-label="1 / 8">
+                  <div class="our-clients__slider-item">
+                    <picture>
+                      <source srcset="static/images/webp/clients/ti-wo.webp" type="image/webp">
+                      <img src="static/images/clients/ti-wo.png" alt="partner-igroprom">
+                    </picture>
+                  </div>
+                </div><div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next" data-swiper-slide-index="1" style="width: 307px; margin-right: 20px;" role="group" aria-label="2 / 8">
+                  <div class="our-clients__slider-item">
+                    <picture>
+                      <source srcset="static/images/webp/clients/dreamuch.webp" type="image/webp">
+                      <img src="static/images/clients/dreamuch.png" alt="partner-dreamuch">
+                    </picture>
+                  </div>
+                </div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" style="width: 307px; margin-right: 20px;" role="group" aria-label="3 / 8">
+                  <div class="our-clients__slider-item">
+                    <picture>
+                      <source srcset="static/images/webp/clients/se.webp" type="image/webp">
+                      <img src="static/images/clients/se.png" alt="system-electric">
+                    </picture>
+                  </div>
+                </div><div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3" style="width: 307px; margin-right: 20px;" role="group" aria-label="4 / 8">
+                  <div class="our-clients__slider-item">
+                    <picture>
+                      <source srcset="static/images/webp/clients/visuals.webp" type="image/webp">
+                      <img src="static/images/clients/visuals.png" alt="partner-visuals">
+                    </picture>
+                  </div>
+                </div></div>
+              <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" aria-current="true"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+              <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-94d3450a234dc610c"></div>
+              <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-94d3450a234dc610c"></div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+          </div>
+        </div>
+      </section>
+      <section class="contribution">
+        <div class="capabilities__waves"></div>
+        <div class="container">
+          <div class="contribution__wrapper">
+            <div class="contribution__wrapper-text">
+              <h2>Внесите свой вклад в развитие OpenSource в России</h2>
+              <p>Внесите свой вклад в развитие отечественных технологий и промышленности. В сервисе можно найти все передовые опенсурс разработки компаний.</p>
+              <a href="https://gitflic.ru/public/project?sort=updated_at&amp;direction=ASC" class="button button--primary" target="_blank">Смотреть все проекты</a>
+            </div>
+            <div class="contribution__wrapper-tiles">
+              <div class="contribution__wrapper-tiles-row">
+                <div class="contribution__wrapper-tile">
+                  <img src="https://gitflic.ru/upload/img/126c71f6-e8b4-4621-8dc9-283dc8eeb560.png" alt="contributor-logo">
+                  <div class="contribution__wrapper-tile-title">gitflic/gitflic</div>
+                  <p>Представляем Вам GitFlic - первый сделанный в России сервис хранения исходного кода.</p>
+                </div>
+                <div class="contribution__wrapper-tile">
+                  <img src="https://gitflic.ru/static/image/avatar.jpg" alt="contributor-logo">
+                  <div class="contribution__wrapper-tile-title">kovardin/flutter-yandex-ads</div>
+                  <p>Yandex ADS for flutter applicaitions</p>
+                </div>
+              </div>
+              <div class="contribution__wrapper-tiles-row">
+                <div class="contribution__wrapper-tile" onclick="location.href='https://gitflic.ru/company/rustore'">
+                  <img src="https://gitflic.ru/static/images/partners/rustore-logo.png" alt="contributor-logo">
+                  <div class="contribution__wrapper-tile-title">Rustore</div>
+                  <p>Официальный магазин приложений для Android</p>
+                </div>
+                <div class="contribution__wrapper-tile">
+                  <img src="https://gitflic.ru/upload/img/a9771590-ad2c-441e-8729-7abe12349609.png" alt="contributor-logo">
+                  <div class="contribution__wrapper-tile-title">kill-real/supple-scheme-switcher</div>
+                  <p>Универсальный переключатель светлой и темной темы в вэб-приложениях.</p>
+                </div>
+                <div class="contribution__wrapper-tile">
+                  <img src="https://gitflic.ru/upload/img/41db4a01-fd4d-425b-87cc-918c44e07d86.jpg" alt="contributor-logo">
+                  <div class="contribution__wrapper-tile-title">rurewa/Altlinux</div>
+                  <p>Всё для поддержки дистрибутива Atl Linux 10</p>
+                </div>
+              </div>
+              <div class="contribution__wrapper-tiles-row">
+                <div class="contribution__wrapper-tile">
+                  <img src="https://gitflic.ru/upload/img/93807062-77b1-4360-a704-486f25380b39.jpg" alt="contributor-logo">
+                  <div class="contribution__wrapper-tile-title">OpenIDE</div>
+                  <p>OpenIDE — открытая среда разработки для профессионалов</p>
+                </div>
+                <div class="contribution__wrapper-tile">
+                  <img src="https://gitflic.ru/upload/img/ec870459-ce85-4032-aad2-74f70bef4f61.jpg" alt="contributor-logo">
+                  <div class="contribution__wrapper-tile-title">АО БАЙКАЛ ЭЛЕКТРОНИКС</div>
+                  <p>«Байкал Электроникс» специализируется на проектировании интегральных микросхем и систем на кристалле на базе архитектур ARM и MIPS.</p>
+                </div>
+                <div class="contribution__wrapper-tile">
+                  <img src="https://gitflic.ru/upload/img/e3b40557-c190-4135-bfd9-7e77b06cb84f.png" alt="contributor-logo">
+                  <div class="contribution__wrapper-tile-title">iqstudio/iQMemo</div>
+                  <p>Блокнот-редактор оперативных данных (рабочих заметок) для linux.</p>
+                </div>
+              </div>
+              <div class="contribution__wrapper-tiles-row">
+                <div class="contribution__wrapper-tile">
+                  <img src="https://gitflic.ru/upload/img/00783620-1b97-4e6c-9856-a150c1ccf131.png" alt="contributor-logo">
+                  <div class="contribution__wrapper-tile-title">gembeider/Weather-Monitor</div>
+                  <p>Монитор погоды на электронной бумаге</p>
+                </div>
+                <div class="contribution__wrapper-tile">
+                  <img src="https://gitflic.ru/upload/img/20a9339c-b30c-4344-9795-6158270135fc.jpg" alt="contributor-logo">
+                  <div class="contribution__wrapper-tile-title">sovietcitizen/ansible-role-mysql</div>
+                  <p>This role is useful to install MySQL Server.</p>
+                </div>
+                <div class="contribution__wrapper-tile">
+                  <img src="https://gitflic.ru/upload/img/7997c251-76d6-4fd2-bdc0-e472696e68e7.jpg" alt="contributor-logo">
+                  <div class="contribution__wrapper-tile-title">triune-fox/Majestic Arrival</div>
+                  <p>Majestic Arrival</p>
+                </div>
+                <div class="contribution__wrapper-tile">
+                  <img src="https://gitflic.ru/static/image/avatar.jpg" alt="contributor-logo">
+                  <div class="contribution__wrapper-tile-title">metrology-cloud/Metrology-cloud</div>
+                  <p>Portal Metrology</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="to-top-button"></div>
+
+    <footer class="footer">
+        <div class="capabilities__waves"> </div>
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__info">
+                    <div class="footer__logo">
+                        <img src="/static/images/logo.svg" alt="GitFlic logo">
+                    </div>
+                    <p>ООО "РеСолют"</p>
+                    <p>ОГРН: 1217700127094</p>
+                    <p><a href="https://new.fips.ru/registers-doc-view/fips_servlet?DB=EVM&amp;DocNumber=2021667729&amp;TypeFile=html" target="_blank">Патент №2021667729</a></p>
+                    <p><a href="https://reestr.digital.gov.ru/reestr/1199098/" target="_blank">Запись в Реестре российского ПО <br> №15861 от 09.12.2022</a></p>
+                    <p><a href="mailto:support@gitflic.ru"><i class="icon icon-mail"></i>support@gitflic.ru</a></p>
+                </div>
+                <div class="footer__menu">
+                    <div class="footer__menu-col">
+                        <h4>Сервис</h4>
+                        <a href="https://docs.gitflic.ru">Документация</a>
+                        <a href="/price">Тарифы</a>
+                        <a href="https://gitflic.ru/public/project?sort=updated_at&amp;direction=ASC" target="_blank">Хранилище кода</a>
+                        <a href="/download/cloud">Облачная инфраструктура (SaaS)</a>
+                        <a href="/download/onpremise">Собственный сервер (self-hosted)</a>
+                    </div>
+                    <div class="footer__menu-col">
+                        <h4>Компания</h4>
+                        <a href="/contact">Контакты</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__sub">
+                <span>Группа Астра, 2026</span>
+                <a href="/docs/policy">Политика конфиденциальности</a>
+                <a href="/docs/terms">Пользовательское соглашение</a>
+                <a href="/docs/license">Лицензионное соглашение</a>
+                <a href="/docs/policy-sh">Политика лицензирования self-hosted</a>
+                <a href="/docs/license-sh">Лицензионное соглашение self-hosted</a>
+                <a href="/static/files/privacy-policy.pdf" download="">Политика обработки ПДн</a>
+            </div>
+        </div>
+    </footer>
+
+      <!-- <div class="modal" id="modal">
+        <div class="modal__wrapper demo-wrapper">
+          <div class="modal__body">
+            <div class="demo-content" id="form-demo" style="z-index: 999">
+              <div class="content">
+                <h3>Остались вопросы?</h3>
+                <div class="content-link">
+                  <p>Если хотите узнать больше о продукте, условиях сотрудничества, лицензиях или запланировать демонстрацию — напишите нам.</p>
+                  <div class="link-block">
+                    <a href="mailto:sales@gitflic.ru">sales@gitflic.ru</a>
+                  </div>
+                </div>
+              </div>
+              <div class="demo-image">
+                <img src="static/images/capabilities/landing-demo-bear.png" alt="landing-demo-bear">
+              </div>
+            </div>
+            <div id="loader" class="hidden loader__wrapper">
+              <span class="loader"></span>
+            </div>
+            <div id="result" class="result__wrapper hidden">
+            </div>
+          </div>
+          <div class="d-flex align-items-center modal__close">
+            <div class="modal__close-icon"></div>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="modal" id="modal">
+        <div class="modal__wrapper">
+          <div class="modal__header">
+            <h4 class="modal__header-text">
+Запросить демонстрацию локальной версии GitFlic            </h4>
+            <hr>
+          </div>
+          <div class="modal__body">
+            <form id="form-demo" method="POST" style="z-index: 999" onsubmit="ym(74493169,'reachGoal','zapros_demo'); return true;">
+              <input type="hidden" name="_csrf" value="21ee2dbc-0df5-4ed3-a131-c1ce07ba24c5">
+
+              <div class="form-group">
+                <label data-current-length="0 / 200" for="name" class="gf-counted-input required-label">
+                  <b>ФИО</b>
+                  <input class="form-control gf-counted-js" type="text" id="name" name="name" inputmode="text" placeholder="Иванов Иван Иванович" required="required" minlength="1" maxlength="200">
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label data-current-length="0 / 200" for="companyName" class="gf-counted-input">
+                  <b>Компания</b>
+                  <input class="form-control gf-counted-js" type="text" id="companyName" inputmode="text" name="companyName" placeholder="ООО Компания" minlength="1" maxlength="200">
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label data-current-length="0 / 200" for="email" class="gf-counted-input required-label">
+                  <b>Почта</b>
+                  <input class="form-control gf-counted-js" type="email" id="email" inputmode="email" name="email" placeholder="example@example.ru" required="required" minlength="1" maxlength="200">
+                </label>
+              </div>
+
+              <div class="form-group">
+                <label for="jobTitle">
+                  <b>Должность</b>
+                  <select class="form-control" id="jobTitle" name="jobTitle">
+                    <option>Руководитель высшего звена</option>
+                    <option>Руководитель среднего звена</option>
+                    <option>Техлид / Тимлид</option>
+                    <option>Разработчик / DevOps-инженер</option>
+                  </select>
+              </label></div>
+
+              <div class="form-group">
+                <label for="amountDevelopers" class="required-label">
+                  <b>Количество разработчиков</b>
+                  <select required="required" class="form-control" id="amountDevelopers" name="amountDevelopers">
+                    <option>до 50</option>
+                    <option>от 50 до 100</option>
+                    <option>от 100 до 500</option>
+                    <option>от 500 до 1000</option>
+                    <option>более 1000</option>
+                  </select>
+              </label></div>
+
+              <div class="form-group">
+                <label for="toolsInCompany">
+                  <b>Какие инструменты используются на данный момент в вашей команде?</b>
+                  </label>
+                   <div>
+          <div class="multi-select toolsInCompany" id="toolsInCompany" style="">
+              
+              <div class="multi-select-header" style="">
+                  <span class="multi-select-header-max"></span>
+                  <span class="multi-select-header-placeholder">Выберите что-то из списка</span>
+              </div>
+              <div class="multi-select-options" style="">
+                  
+                  
+                  
+              <div class="multi-select-option" data-value="GitLab CE">
+                  <span class="multi-select-option-radio"></span>
+                  <span class="multi-select-option-text">GitLab CE</span>
+              </div>
+          
+              <div class="multi-select-option" data-value="GitLab Premium">
+                  <span class="multi-select-option-radio"></span>
+                  <span class="multi-select-option-text">GitLab Premium</span>
+              </div>
+          
+              <div class="multi-select-option" data-value="BitBucket">
+                  <span class="multi-select-option-radio"></span>
+                  <span class="multi-select-option-text">BitBucket</span>
+              </div>
+          
+              <div class="multi-select-option" data-value="GitHub">
+                  <span class="multi-select-option-radio"></span>
+                  <span class="multi-select-option-text">GitHub</span>
+              </div>
+          
+              <div class="multi-select-option" data-value="Azure DevOps">
+                  <span class="multi-select-option-radio"></span>
+                  <span class="multi-select-option-text">Azure DevOps</span>
+              </div>
+          
+              <div class="multi-select-option" data-value="Jfrog Artifactory">
+                  <span class="multi-select-option-radio"></span>
+                  <span class="multi-select-option-text">Jfrog Artifactory</span>
+              </div>
+          
+              <div class="multi-select-option" data-value="Nexus">
+                  <span class="multi-select-option-radio"></span>
+                  <span class="multi-select-option-text">Nexus</span>
+              </div>
+          
+              <div class="multi-select-option" data-value="Jenkins">
+                  <span class="multi-select-option-radio"></span>
+                  <span class="multi-select-option-text">Jenkins</span>
+              </div>
+          
+              <div class="multi-select-option" data-value="Jira">
+                  <span class="multi-select-option-radio"></span>
+                  <span class="multi-select-option-text">Jira</span>
+              </div>
+          
+              </div>
+          </div>
+      </div>
+              </div>
+
+              <label for="isAnotherAnswer" class="gf-custom-checkbox">
+                    <input name="isAnotherAnswer" id="isAnotherAnswer" type="checkbox">
+                    <span>Инструмента нет в данном списке</span>
+              </label>
+
+              <div class="form-group">
+              <label data-current-length="0 / 200" for="anotherTools" class="gf-counted-input required-label">
+                <input class="form-control hidden gf-counted-js" type="text" inputmode="text" id="anotherTools" name="anotherTools" placeholder="Ваш инструмент" minlength="1" maxlength="200">
+            </label>
+              </div>
+
+              <div class="form-group">
+                <label for="functionDevelop" class="">
+                  <b>Какие функции используете в процессе разработки?</b>
+                  </label>
+                  <div>
+          <div class="multi-select functionDevelop" id="functionDevelop" style="">
+              
+              <div class="multi-select-header" style="">
+                  <span class="multi-select-header-max"></span>
+                  <span class="multi-select-header-placeholder">Выберите что-то из списка</span>
+              </div>
+              <div class="multi-select-options" style="">
+                  
+                  
+                  
+              <div class="multi-select-option" data-value="Хранение исходного кода">
+                  <span class="multi-select-option-radio"></span>
+                  <span class="multi-select-option-text">Хранение исходного кода</span>
+              </div>
+          
+              <div class="multi-select-option" data-value="CI/CD">
+                  <span class="multi-select-option-radio"></span>
+                  <span class="multi-select-option-text">CI/CD</span>
+              </div>
+          
+              <div class="multi-select-option" data-value="Интеграции SAST/DAST/SCA">
+                  <span class="multi-select-option-radio"></span>
+                  <span class="multi-select-option-text">Интеграции SAST/DAST/SCA</span>
+              </div>
+          
+              <div class="multi-select-option" data-value="Реестр пакетов">
+                  <span class="multi-select-option-radio"></span>
+                  <span class="multi-select-option-text">Реестр пакетов</span>
+              </div>
+          
+              <div class="multi-select-option" data-value="Реестр контейнеров">
+                  <span class="multi-select-option-radio"></span>
+                  <span class="multi-select-option-text">Реестр контейнеров</span>
+              </div>
+          
+              <div class="multi-select-option" data-value="Deployment">
+                  <span class="multi-select-option-radio"></span>
+                  <span class="multi-select-option-text">Deployment</span>
+              </div>
+          
+              </div>
+          </div>
+      </div>
+            </div>
+                <script async="" src="https://mc.yandex.ru/metrika/tag.js"></script><script src="https://smartcaptcha.yandexcloud.net/captcha.js" defer=""></script>
+                <div style="height: 0px; width: 100%; min-width: 100%; margin-bottom: 1rem;" id="captcha-container" class="smart-captcha gf-ya-captcha" data-sitekey="ysc1_u8fF1wUdys3nB8rCfW22ZQHXsvNAkmJGWOauavia33177a6c" data-testid="smartCaptcha-container"><div style="display: none;"><iframe frameborder="0" src="https://smartcaptcha.yandexcloud.net/backend.13a5060930553252.html?sitekey=ysc1_u8fF1wUdys3nB8rCfW22ZQHXsvNAkmJGWOauavia33177a6c&amp;theme=light&amp;hl=ru&amp;host=gitflic.ru&amp;href=https%3A%2F%2Fgitflic.ru%2F&amp;test=false&amp;webview=false&amp;hideChallengeContainer=false" allow="encrypted-media *; accelerometer" data-testid="backend-iframe" title="SmartCaptcha backend" aria-hidden="true" style="display: block; width: 100%; height: 100%; z-index: 0; transform: translate3d(0px, 0px, 0px);"></iframe></div><input type="hidden" name="smart-token" data-testid="smart-token"><iframe frameborder="0" src="https://smartcaptcha.yandexcloud.net/checkbox.ru.2e94c0142a465b4a.html?sitekey=ysc1_u8fF1wUdys3nB8rCfW22ZQHXsvNAkmJGWOauavia33177a6c&amp;theme=light&amp;hl=ru&amp;host=gitflic.ru&amp;href=https%3A%2F%2Fgitflic.ru%2F&amp;test=false&amp;webview=false&amp;hideChallengeContainer=false" allow="encrypted-media *; accelerometer" data-testid="checkbox-iframe" title="SmartCaptcha checkbox" style="display: block; width: 100%; height: 100%; z-index: 0; transform: translate3d(0px, 0px, 0px);"></iframe></div>
+              <br>
+               <button type="submit" class="button button--primary" data-state="hidden">
+Отправить заявку               </button>
+            </form>
+            <div id="error" class="error hidden">
+              <p class="text__error" id="text__error"></p>
+            </div>
+            <div id="loader" class="hidden loader__wrapper">
+              <span class="loader"></span>
+            </div>
+            <div id="result" class="result__wrapper hidden">
+              <div id="success" class="wrap">
+                <div id="check-part-1" class="check-sign"></div>
+                <div id="check-part-2" class="check-sign"></div>
+              </div>
+              <p class="result__text" id="result__text"></p>
+            </div>
+          </div>
+          <div class="modal__footer">
+            <hr>
+            <p>
+Нажимая на кнопку Отправить заявку вы соглашаетесь с              <a target="_blank" href="https://gitflic.ru/docs/policy">политикой конфеденциальности.</a>
+            </p>
+            <p>
+              <span>
+Остались вопросы? Если хотите узнать больше о продукте, условиях сотрудничества, лицензиях или запланировать демонстрацию — напишите нам.                <a href="mailto:sales@gitflic.ru">sales@gitflic.ru</a>
+              </span>
+            </p>
+          </div>
+          <div class="d-flex align-items-center modal__close">
+            <div class="modal__close-icon"></div>
+          </div>
+        </div>
+      </div>
+      
+      <script src="/static/js/swiper-bundle.js?v=2.5.2"></script>
+      <script>
+      var swiper = new Swiper('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        autoplay: {
+          delay: 5000,
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+      });
+      </script>
+
+                <script src="/static/js/app.min.js?v=4.13.0&amp;t=1785854954"></script>
+
+                <!-- Yandex.Metrika counter -->
+                <script type="text/javascript">
+                  (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+                  m[i].l=1*new Date();
+                  for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+                  k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+                  (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+                  ym(74493169, "init", {
+                      clickmap:true,
+                      trackLinks:true,
+                      accurateTrackBounce:true,
+                      webvisor:true
+                  });
+                </script>
+                <noscript><div><img src="https://mc.yandex.ru/watch/74493169" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+                <!-- /Yandex.Metrika counter -->
+
+        
+    
+<div class="SmartCaptcha-Overlay SmartCaptcha-Overlay_show_spinner" data-testid="advanced-container" tabindex="-1" style="--smart-captcha-doc-height: 876px; --smart-captcha-doc-width: 1707px;"><div class="SmartCaptcha-Spin"></div></div></body></html>
